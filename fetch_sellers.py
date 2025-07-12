@@ -46,7 +46,7 @@ async def fetch_sellers_and_stats():
 
     with open("sell_history.csv", mode='w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['seller', 'price', 'gain_or_loss_vs_floor'])
+        writer.writerow(['Seller', 'Selling Price (SOL)', 'Gain/Loss vs Floor (SOL)'])
         for item in buy_now_items:
             seller = item.get('seller', '')
             price = item.get('price', '')
